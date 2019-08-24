@@ -7,7 +7,7 @@ NCORE=8
 mkdir output
 # set variables
 freesurfer=`jq -r '.freesurfer' config.json`
-cp -V ${freesurfer}/* ./output/
+cp -R ${freesurfer}/* ./output/
 
 segmentThalamicNuclei.sh output ./
 
