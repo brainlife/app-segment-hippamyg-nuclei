@@ -4,10 +4,12 @@ set -e
 
 NCORE=8
 
+mkdir output
 # set variables
 freesurfer=`jq -r '.freesurfer' config.json`
+cp -V ${freesurfer}/* ./output/
 
-segmentThalamicNuclei.sh output ${freesurfer}
+segmentThalamicNuclei.sh output ./
 
 # use output.json as product.Json
 #echo "{\"track\": $(cat output.json)}" > product.json
