@@ -1,5 +1,5 @@
 [![Abcdspec-compliant](https://img.shields.io/badge/ABCD_Spec-v1.1-green.svg)](https://github.com/brain-life/abcd-spec)
-[![Run on Brainlife.io](https://img.shields.io/badge/Brainlife-bl.app.222-blue.svg)](https://doi.org/10.25663/bl.app.222)
+[![Run on Brainlife.io](https://img.shields.io/badge/Brainlife-bl.app.222-blue.svg)](https://doi.org/10.25663/brainlife.app.222)
 
 # app-segment-thalamic-nuclei
 This app will segment the thalamus into its multiple components using the developer version of Freesurfer's segmentThalamicNuclei.sh function (http://freesurfer.net/fswiki/ThalamicNuclei). This app takes a Freesurfer segmentation in as an input and generates .mgz files with the appropriate thalamic segmentation inside the Freesurfer directory as an output.
@@ -19,7 +19,7 @@ This app will segment the thalamus into its multiple components using the develo
 
 ### On Brainlife.io
 
-You can submit this App online at [https://doi.org/10.25663/bl.app.222](https://doi.org/10.25663/bl.app.222) via the "Execute" tab.
+You can submit this App online at [https://doi.org/10.25663/brainlife.app.222](https://doi.org/10.25663/brainlife.app.222) via the "Execute" tab.
 
 ### Running Locally (on your machine)
 
