@@ -11,7 +11,7 @@ mkdir output
 freesurfer=`jq -r '.freesurfer' config.json`
 
 # copy data from freesurfer to output
-cp -R ${freesurfer} ./output/
+cp -R ${freesurfer}/* ./output/
 
 # set subjects directory for freesurfer
 SUBJECTS_DIR=`pwd`
