@@ -1,5 +1,5 @@
 #!/bin/bash
-#PBS -l nodes=1:ppn=8,vmem=14gb,walltime=2:00:00
+#PBS -l nodes=1:ppn=1,vmem=12gb,walltime=1:30:00
 #PBS -N app-thalamic-segmentation
 
 echo $FREESURFER_LICENSE > license.txt
