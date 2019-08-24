@@ -2,6 +2,10 @@
 
 set -e
 
+NCORE=4
+
+export ITK_GLOBAL_DEFAULT_NUMBER_OF_THREADS=$NCORE
+
 # make output directory
 mkdir output
 
