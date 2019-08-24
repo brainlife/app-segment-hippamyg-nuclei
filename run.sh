@@ -2,8 +2,6 @@
 
 set -e
 
-NCORE=8
-
 # make output directory
 mkdir output
 
