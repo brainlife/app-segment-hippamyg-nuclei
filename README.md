@@ -54,7 +54,7 @@ bl dataset download 5967bffa9b45c212bbec8958 && mv 5967bffa9b45c212bbec8958 inpu
 
 ## Output
 
-The main outputs of this App are an inflated parcellation datatype and an roi (niftis) datatype.
+The main output of this app is a freesurfer datatype with appropriate .mgz files for the thalamic segmentation.
 
 #### Product.json
 The secondary output of this app is `product.json`. This file allows web interfaces, DB and API calls on the results of the processing. 
@@ -63,12 +63,7 @@ The secondary output of this app is `product.json`. This file allows web interfa
 
 This App requires the following libraries when run locally.
 
-  - singularity: https://singularity.lbl.gov/
-  - VISTASOFT: https://github.com/vistalab/vistasoft/
-  - SPM 8: https://www.fil.ion.ucl.ac.uk/spm/software/spm8/
-  - Freesurfer: https://hub.docker.com/r/brainlife/freesurfer/tags/6.0.0
-  - AFNI: https://hub.docker.com/r/brainlife/afni/tags/16.3.0
-  - jsonlab: https://github.com/fangq/jsonlab.git
+  - Freesurfer: https://hub.docker.com/r/brainlife/freesurfer/tags/dev
   
 ### References
 A probabilistic atlas of the human thalamic nuclei combining ex vivo MRI and histology. Iglesias, J.E., Insausti, R., Lerma-Usabiaga, G., Bocchetta, M., Van Leemput, K., Greve, D., van der Kouwe, A., Caballero-Gaudes, C., Paz-Alonso, P. Neuroimage (accepted).
