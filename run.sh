@@ -9,6 +9,9 @@ export ITK_GLOBAL_DEFAULT_NUMBER_OF_THREADS=$NCORE
 # make output directory
 mkdir -p output
 mkdir -p output/output
+if [ -d output/output/scripts ]; then
+	mkdir -p output/output/scripts
+fi
 
 # set variables
 freesurfer=`jq -r '.freesurfer' config.json`
