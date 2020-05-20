@@ -18,6 +18,7 @@ freesurfer=`jq -r '.freesurfer' config.json`
 
 # copy data from freesurfer to output
 cp -R ${freesurfer}/* ./output/output/
+chmod -R +rw ./output
 
 # set subjects directory for freesurfer
 SUBJECTS_DIR=`pwd`/output
