@@ -3,5 +3,5 @@
 #PBS -N app-thalamic-segmentation
 
 echo $FREESURFER_LICENSE > license.txt
-time singularity exec -e -B `pwd`/license.txt:/usr/local/freesurfer/license.txt docker://brainlife/freesurfer:dev ./run.sh
+time singularity exec -e -B `pwd`/license.txt:/usr/local/freesurfer/license.txt docker://brainlife/freesurfer:7.1.0 ./run.sh
 
