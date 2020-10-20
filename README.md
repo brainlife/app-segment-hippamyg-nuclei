@@ -74,7 +74,7 @@ The secondary output of this app is `product.json`. This file allows web interfa
 
 This App requires the following libraries when run locally. 
 
-- Freesurfer: 
-- FSL: 
-- jsonlab: 
-- singularity: 
+- Freesurfer: https://surfer.nmr.mgh.harvard.edu/fswiki/DownloadAndInstall
+- FSL: https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/FslInstallation
+- jsonlab: https://github.com/fangq/jsonlab
+- singularity: https://singularity.lbl.gov/quickstart
