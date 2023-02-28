@@ -24,4 +24,8 @@ chmod -R +rw ./output
 SUBJECTS_DIR=`pwd`/output
 
 # run segmentation
-segmentThalamicNuclei.sh output ${SUBJECTS_DIR}
+if [ -f ./output/mri/T2.mgz ]; then
+	segmentHA_T2.sh output ./output/mri/T2.mgz T2 1 ${SUBJECTS_DIR}
+else
+	segmentHA_T1.sh output ${SUBJECTS_DIR}
+fi
