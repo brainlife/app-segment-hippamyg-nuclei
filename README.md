@@ -1,9 +1,8 @@
 [![Abcdspec-compliant](https://img.shields.io/badge/ABCD_Spec-v1.1-green.svg)](https://github.com/brain-life/abcd-spec)
 [![Run on Brainlife.io](https://img.shields.io/badge/Brainlife-brainlife.app.222-blue.svg)](https://doi.org/10.25663/brainlife.app.222)
 
-# Segment thalamic nuclei 
-
-This app will segment the thalamus into its multiple components using the developer version of Freesurfer’s segmentThalamicNuclei.sh function (http://freesurfer.net/fswiki/ThalamicNuclei). This app takes a Freesurfer segmentation in as an input and generates .mgz files with the appropriate thalamic segmentation inside the Freesurfer directory as an output. 
+# Segment hippocampal and amygdala nuclei
+This app will segment the hippocampus and amygdala into its multiple components using the developer version of Freesurfer’s segmentHA_T1.sh function (https://surfer.nmr.mgh.harvard.edu/fswiki/HippocampalSubfieldsAndNucleiOfAmygdala). This app takes a Freesurfer segmentation in as an input and generates .mgz files with the appropriate hippocampal and amygdala nuclei inside the Freesurfer directory as an output. 
 
 ### Authors 
 
@@ -25,7 +24,11 @@ This app will segment the thalamus into its multiple components using the develo
 
 Please cite the following articles when publishing papers that used data, code or other resources created by the brainlife.io community. 
 
-1. Iglesias, J. E., Insausti, R., Lerma-Usabiaga, G., Bocchetta, M., Van Leemput, K., Greve, D. N., van der Kouwe, A., Alzheimer's Disease Neuroimaging Initiative, Fischl, B., Caballero-Gaudes, C., & Paz-Alonso, P. M. (2018). A probabilistic atlas of the human thalamic nuclei combining ex vivo MRI and histology. NeuroImage, 183, 314–326. https://doi.org/10.1016/j.neuroimage.2018.08.012 
+1. Hippocampus: A computational atlas of the hippocampal formation using ex vivo, ultra-high resolution MRI: Application to adaptive segmentation of in vivo MRI. Iglesias, J.E., Augustinack, J.C., Nguyen, K., Player, C.M., Player, A., Wright, M., Roy, N., Frosch, M.P., Mc Kee, A.C., Wald, L.L., Fischl, B., and Van Leemput, K. Neuroimage, 115, July 2015, 117-137.
+
+2. Amygdala: High-resolution magnetic resonance imaging reveals nuclei of the human amygdala: manual segmentation to automatic atlas. Saygin ZM & Kliemann D (joint 1st authors), Iglesias JE, van der Kouwe AJW, Boyd E, Reuter M, Stevens A, Van Leemput K, Mc Kee A, Frosch MP, Fischl B, Augustinack JC. Neuroimage, 155, July 2017, 370-382.
+
+3. Longitudinal method: Bayesian longitudinal segmentation of hippocampal substructures in brain MRI using subject-specific atlases. Iglesias JE, Van Leemput K, Augustinack J, Insausti R, Fischl B, Reuter M. Neuroimage, 141, November 2016, 542-555. 
 
 ## Running the App 
 
