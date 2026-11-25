@@ -10,9 +10,9 @@
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-lightgrey.svg" alt="MIT license"></a>
 </p>
 
-> 📍 **This branch, `v1.0`, is the brainlife.io App Segment hippocampal and amygdala nuclei** ([doi:10.25663/brainlife.app.738](https://doi.org/10.25663/brainlife.app.738)).
+> **This branch, `v1.0`, is the brainlife.io App Segment hippocampal and amygdala nuclei** ([doi:10.25663/brainlife.app.738](https://doi.org/10.25663/brainlife.app.738)).
 
-## 🧠 At a glance
+## At a glance
 
 <!-- brainlife-app:begin (generated from the App manifest; edit the manifest, not this block) -->
 
@@ -22,20 +22,20 @@ Copies the FreeSurfer subject directory and runs segmentHA_T1.sh (segmentHA_T2.s
 
 | | |
 |---|---|
-| 📥 **Inputs** | `neuro/freesurfer` |
-| 📤 **Outputs** | `neuro/freesurfer` |
-| 🐳 **Container** | `brainlife/freesurfer:7.3.2` |
-| ⚙️ **Resources** | 2 CPUs · 20 GB memory · 0.75 h walltime |
-| 🔑 **Requires** | `FREESURFER_LICENSE` |
-| 🔗 **Run it** | [doi.org/10.25663/brainlife.app.738](https://doi.org/10.25663/brainlife.app.738) |
+| **Inputs** | `neuro/freesurfer` |
+| **Outputs** | `neuro/freesurfer` |
+| **Container** | `brainlife/freesurfer:7.3.2` |
+| **Resources** | 2 CPUs · 20 GB memory · 0.75 h walltime |
+| **Requires** | `FREESURFER_LICENSE` |
+| **Run it** | [doi.org/10.25663/brainlife.app.738](https://doi.org/10.25663/brainlife.app.738) |
 
-#### 📥 Inputs
+#### Inputs
 
 | Input | Datatype | Required | Description |
 |---|---|---|---|
 | `freesurfer` | `neuro/freesurfer` | yes | The path to the freesurfer datatype. Completed FreeSurfer recon-all subject directory. |
 
-#### 📤 Outputs
+#### Outputs
 
 | Output | Datatype | Description |
 |---|---|---|
@@ -43,15 +43,15 @@ Copies the FreeSurfer subject directory and runs segmentHA_T1.sh (segmentHA_T2.s
 
 <!-- brainlife-app:end -->
 
-## 🚀 Running the App
+## Running the App
 
-### ☁️ On brainlife.io
+### On brainlife.io
 
 Open the App at [doi.org/10.25663/brainlife.app.738](https://doi.org/10.25663/brainlife.app.738), choose a `neuro/freesurfer` dataset (a completed `recon-all` subject directory) from your project and press **Execute**. The result is a new `neuro/freesurfer` dataset, archived to your project, that contains the original FreeSurfer output plus the hippocampal and amygdala nuclei segmentations. Use it, for example, before converting those labels into a parcellation.
 
 The App copies the FreeSurfer subject directory and runs FreeSurfer's [hippocampal subfields and amygdala nuclei](https://surfer.nmr.mgh.harvard.edu/fswiki/HippocampalSubfieldsAndNucleiOfAmygdala) module (`segmentHA_T1.sh`) on it.
 
-### 💻 Locally
+### Locally
 
 You need [Singularity/Apptainer](https://apptainer.org/), [`jq`](https://jqlang.github.io/jq/) and a [FreeSurfer license](https://surfer.nmr.mgh.harvard.edu/registration.html). FreeSurfer 7.3.2 runs inside the `brainlife/freesurfer:7.3.2` container.
 
@@ -71,7 +71,7 @@ You need [Singularity/Apptainer](https://apptainer.org/), [`jq`](https://jqlang.
    ./main
    ```
 
-### 🧪 Sample data
+### Sample data
 
 Download sample datasets from brainlife.io with the [brainlife CLI](https://github.com/brainlife/cli):
 
@@ -82,7 +82,7 @@ mkdir input
 bl dataset download <dataset-id>
 ```
 
-## 📦 Outputs
+## Outputs
 
 `output/` is a FreeSurfer dataset whose `output/` subject directory is a copy of the input with the new segmentations added:
 
@@ -96,12 +96,12 @@ output/
     └── surf/
 ```
 
-## 🩺 Troubleshooting
+## Troubleshooting
 
 - **The module fails to start or complains about a license**: `FREESURFER_LICENSE` must contain a valid FreeSurfer license; `main` writes it to `license.txt` and mounts it into the container.
 - **Errors about missing `recon-all` files**: the input must be a completed `recon-all` subject directory.
 
-## 📚 Citing
+## Citing
 
 > [!TIP]
 > If you use this App in your work, please cite the App, the software it builds on and brainlife.io (below). GitHub's **Cite this repository** button gives the App citation in APA and BibTeX.
@@ -114,13 +114,13 @@ output/
 - Hayashi S, Caron BA, Heinsfeld AS, et al. brainlife.io: a decentralized and open-source cloud platform to support neuroscience research. *Nature Methods* 21:809–813 (2024). [doi:10.1038/s41592-024-02237-2](https://doi.org/10.1038/s41592-024-02237-2)
 - Avesani P, McPherson B, Hayashi S, et al. The open diffusion data derivatives, brain data upcycling via integrated publishing of derivatives and reproducible open cloud services. *Scientific Data* 6:69 (2019). [doi:10.1038/s41597-019-0073-y](https://doi.org/10.1038/s41597-019-0073-y)
 
-## 👥 Authors
+## Authors
 
 - Brad Caron
 
 **Contributors:** Soichi Hayashi, Franco Pestilli
 
-## 💰 Funding
+## Funding
 
 [![Wellcome-226486/Z/22/Z](https://img.shields.io/badge/Wellcome-226486%2FZ%2F22%2FZ-purple.svg)](https://wellcome.org/)
 [![NIH-NINDS-U24NS140384](https://img.shields.io/badge/NIH_NINDS-U24NS140384-green.svg)](https://reporter.nih.gov/project-details/11261037)
@@ -139,6 +139,6 @@ output/
 
 <sub>brainlife.io is publicly funded, and acknowledging that support helps keep it running. This App was developed with support from Wellcome, the U.S. National Institutes of Health (including the BRAIN Initiative BRAIN CONNECTS program: The Axonal Projectome EXchange, U24NS140384, and the Center for Mesoscale Connectomics, UM1NS132207) and the U.S. National Science Foundation.</sub>
 
-## ⚖️ License
+## License
 
 [MIT](LICENSE). FreeSurfer itself is distributed under its own [license](https://surfer.nmr.mgh.harvard.edu/fswiki/FreeSurferSoftwareLicense).
