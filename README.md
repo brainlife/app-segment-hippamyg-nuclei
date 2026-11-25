@@ -2,6 +2,27 @@
 [![Run on Brainlife.io](https://img.shields.io/badge/Brainlife-brainlife.app.222-blue.svg)](https://doi.org/10.25663/brainlife.app.222)
 
 # Segment hippocampal and amygdala nuclei
+
+<!-- brainlife-app:begin (generated from the App manifest; edit the manifest, not this block) -->
+
+**Segments hippocampal subfields and amygdala nuclei with FreeSurfer 7.3.2 segmentHA_T1.sh on a FreeSurfer subject directory and returns the updated directory.**
+
+Copies the FreeSurfer subject directory and runs segmentHA_T1.sh (segmentHA_T2.sh when a T2.mgz is found), adding the lh/rh hippoAmygLabels volumes to mri/. Use it before converting those labels into a parcellation. Requires a completed recon-all.
+
+Run it on brainlife.io: [https://doi.org/10.25663/brainlife.app.738](https://doi.org/10.25663/brainlife.app.738)
+
+| Input | Datatype | Required | Description |
+|---|---|---|---|
+| `freesurfer` | `neuro/freesurfer` | yes | The path to the freesurfer datatype. Completed FreeSurfer recon-all subject directory. |
+
+| Output | Datatype | Description |
+|---|---|---|
+| `output` | `neuro/freesurfer` | Output freesurfer datatype including hippocampal and amygdala nuclei segmentation |
+
+Runtime: container `brainlife/freesurfer:7.3.2`; 2 CPUs; 20 GB memory; 0.75 h walltime; needs `FREESURFER_LICENSE`.
+
+<!-- brainlife-app:end -->
+
 This app will segment the hippocampus and amygdala into its multiple components using the developer version of Freesurfer’s segmentHA_T1.sh function (https://surfer.nmr.mgh.harvard.edu/fswiki/HippocampalSubfieldsAndNucleiOfAmygdala). This app takes a Freesurfer segmentation in as an input and generates .mgz files with the appropriate hippocampal and amygdala nuclei inside the Freesurfer directory as an output. 
 
 ### Authors 
